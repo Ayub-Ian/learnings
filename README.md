@@ -31,6 +31,6 @@ There are mainly three asymptotic notations:
 
 [big0]: https://github.com/Ayub-Ian/learnings/tree/asymptotic_notation/big-0-notation
 
-[omega]: https://github.com/Ayub-Ian/learnings/tree/asymptotic_notation/big-0-notation
+[omega]: https://github.com/Ayub-Ian/learnings/tree/asymptotic_notation/omega-notation
 
-[theta]: https://github.com/Ayub-Ian/learnings/tree/asymptotic_notation/big-0-notation
+[theta]: https://github.com/Ayub-Ian/learnings/tree/asymptotic_notation/theta-notation
