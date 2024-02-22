@@ -1,6 +1,9 @@
 # Stack Data Structure
 
-A stack is a linear data structure that follows the principle of Last In First Out (LIFO). This means the last element inserted inside the stack is removed first.
+A stack is an ordered collection of items where the addition of new items and the removal of existing items always takes place at the same end.  It's
+linear data structure that follows the principle of Last In First Out (LIFO). This means the last element inserted inside the stack is removed first.
+
+It provides an ordering based on length of time in the collection. Newer items are near the top, while older items are near the base.
 
 You can think of the stack data structure as the pile of plates on top of another.
 ![stack of plates](images/stack-of-plates.png)
@@ -17,12 +20,15 @@ A stack can be implemented by means of Array, Structure, Pointer, and Linked Lis
 ### Basic Operations of Stack
 
 There are some basic operations that allow us to perform different actions on a stack.
+- **Stack()**: creates a new stack that is empty. It needs no parameters and returns an empty stack.
+- **Push(item)**: Add an element to the top of a stack.It needs the item and returns nothing.
+- **Pop()**: Remove an element from the top of a stack. It needs no parameters and returns the item. The stack is modified.
+- **IsEmpty()**: Check if the stack is empty. It needs no parameters and returns a boolean value.
+- **IsFull()**: Check if the stack is full
+- **Peek()**: Get the value of the top element without removing it. It needs no parameters. The stack is not modified.
+- **size()**: returns the number of items on the stack. It needs no parameters and returns an integer.
 
-- **Push**: Add an element to the top of a stack
-- **Pop**: Remove an element from the top of a stack
-- **IsEmpty**: Check if the stack is empty
-- **IsFull**: Check if the stack is full
-- **Peek**: Get the value of the top element without removing it
+
 
 ## Working of Stack Data Structure
 The operations work as follows:

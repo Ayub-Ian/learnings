@@ -1,4 +1,9 @@
 class Stack:
+    """
+    A list where the top is at the end.
+    The append and pop() operations are both O(1).
+    """
+     
     def __init__(self) -> None:
         self.stack = []
 
@@ -19,6 +24,33 @@ class Stack:
     
     def size(self):
         return len(self.stack)
+    
+    def peek(self):
+         return self.items[len(self.items)-1]
+    
+class ReverseStack:
+     """
+      A list where the top is at the beginning instead of at the end.
+      The insert(0) and pop(0) operations will both require O(n) for a stack of size n.
+      """
+     def __init__(self):
+         self.items = []
+
+     def isEmpty(self):
+         return self.items == []
+
+     def push(self, item):
+         self.items.insert(0,item)
+    
+     def pop(self):
+         return self.items.pop(0)
+     
+     def peek(self):
+         return self.items[0]
+     
+     def size(self):
+         return len(self.items)
+
     
 class FixedStack:
     def __init__(self, MAX_SIZE) -> None:
@@ -58,6 +90,9 @@ class FixedStack:
     
     def peek(self):
         return self.stack[self.top]
+    
+    def size(self):
+        return self.top + 1
     
     def display(self):
         print(self.stack)
