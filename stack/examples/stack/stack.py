@@ -26,7 +26,7 @@ class Stack:
         return len(self.stack)
     
     def peek(self):
-         return self.items[len(self.items)-1]
+         return self.stack[len(self.stack)-1]
     
 class ReverseStack:
      """
